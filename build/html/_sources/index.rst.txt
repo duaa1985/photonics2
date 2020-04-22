@@ -18,6 +18,11 @@ Welcome to the Introduction to Photonics 2 Course!
 
    notebooks/L2/Lecture 2.ipynb
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Lecture 3:
+   
+   notebooks/L3/Lecture 3.ipynb
 
 Indices and tables
 ==================
