@@ -39,8 +39,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="Lecture 3" href="../L3/Lecture 3.html" /> 
+    <link rel="search" title="Search" href="../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -111,25 +110,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../L3/Lecture 3.html#Susceptibility-of-a-Two-Level-System">Susceptibility of a Two Level System</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption"><span class="caption-text">Lecture 4:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to Photonics II</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#Lecture-4">Lecture 4</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#Light-Scattering">Light Scattering</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#General-Electromagnetic-Scattering-Appraoch">General Electromagnetic Scattering Appraoch</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Rayleigh-Theory">Rayleigh Theory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Mie-Theory">Mie Theory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Mie-Scattering-Example-Calculations">Mie Scattering Example Calculations</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#Small-Particle-Scattering">Small Particle Scattering</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Large-Particle-Scattering">Large Particle Scattering</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Gold-Particle-Scattering">Gold Particle Scattering</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -449,8 +429,8 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="Lecture-4">
 <h2>Lecture 4<a class="headerlink" href="#Lecture-4" title="Permalink to this headline">¶</a></h2>
 <p>Frank Cichos, SS2019</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -476,6 +456,23 @@ div.rendered_html tbody tr:hover {
                      <span class="s1">&#39;ytick.direction&#39;</span> <span class="p">:</span> <span class="s1">&#39;in&#39;</span><span class="p">,})</span>
 </pre></div>
 </div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-2-3e50f40c4c8f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">import</span> numpy <span class="ansi-green-fg">as</span> np
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-green-fg">import</span> matplotlib<span class="ansi-blue-fg">.</span>pyplot <span class="ansi-green-fg">as</span> plt
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> miepython <span class="ansi-green-fg">as</span> mp
+<span class="ansi-green-intense-fg ansi-bold">      4</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> get_ipython<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>run_line_magic<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;matplotlib&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;inline&#39;</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;miepython&#39;
+</pre></div></div>
 </div>
 </div>
 </div>
@@ -656,7 +653,7 @@ X_{n}(z)=-\sqrt{\frac{\pi z}{2}}Y_{n+1/2}(z)
 <p>The following example calculates the extinction efficiency <span class="math notranslate nohighlight">\(Q_{ext}=\sigma_{ext}/\pi R^2\)</span> as a function of the size parameter <span class="math notranslate nohighlight">\(\alpha=2\pi R/\lambda\)</span>. For small Rayleigh particles (refractive index <span class="math notranslate nohighlight">\(m=1.5\)</span>), the extinction cross section is much smaller than the geometric cross section. Later the extinction efficiency is displaying a oscillatory behavior, which is due to the interference of the scattering coming from different subvolumes of the particle. At very large particle
 sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating that the extinction cross section is twice as large as the geometric cross section. This surprising effect is known as the <strong>extinction paradox</strong> and is suggested to be due to the fact that an ideal extinction measurement is carried out at infinite distance from the object and thus also sensitive to diffraction of light around the particle.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -682,21 +679,22 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
 </pre></div>
 </div>
 </div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area stderr docutils container">
-<div class="highlight"><pre>
-/Users/fci/opt/anaconda3/lib/python3.7/site-packages/miepython/miepython.py:249: RuntimeWarning: invalid value encountered in double_scalars
-  qback = 4*abs(sback)**2/x2
-</pre></div></div>
-</div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture_4_15_1.png"><img alt="../../_images/notebooks_L4_Lecture_4_15_1.png" src="../../_images/notebooks_L4_Lecture_4_15_1.png" style="width: 734px; height: 440px;" /></a>
-</div>
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-3edc0045b61d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> num <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">2000</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>x <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>linspace<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">20</span><span class="ansi-blue-fg">,</span>num<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> qqext1 <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span>num<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> qqext2 <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span>num<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;np&#39; is not defined
+</pre></div></div>
 </div>
 <p>The next example plots are showing the scaterring intensities of a particle of 5 times the wavelength radius and a refractive index of <span class="math notranslate nohighlight">\(m=1.5\)</span> as a function of the scattering angle <span class="math notranslate nohighlight">\(\theta\)</span>. The plots contain the logarithm of the differential scattering cross section for the two polarization directions as otherwise the backscattering would be only hardly visible. <strong>Large particles as compared to the wavelength are strongly scattering into the forward direction.</strong></p>
 <div class="section" id="Small-Particle-Scattering">
@@ -876,13 +874,6 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
           </div>
           <footer>
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="../L3/Lecture 3.html" class="btn btn-neutral float-left" title="Lecture 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
 
   <hr/>
 
@@ -890,7 +881,7 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
     <p>
         &copy; Copyright 2020, Frank Cichos
       <span class="lastupdated">
-        Last updated on Apr 29, 2020.
+        Last updated on May 13, 2020.
       </span>
 
     </p>
