@@ -36,7 +36,7 @@ Welcome to the Introduction to Photonics 2 Course!
     :maxdepth: 2
     :caption: Lecture 6:
 
-    notebooks/L4/Lecture 6.ipynb
+    notebooks/L6/Lecture 6.ipynb
 
 Indices and tables
 ==================
