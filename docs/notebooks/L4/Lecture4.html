@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Lecture 4 &mdash; Introduction to Photonics 2 1 documentation</title>
+  <title>Classical Light Scattering &mdash; Introduction to Photonics 2 1 documentation</title>
   
 
   
@@ -40,8 +40,8 @@
   <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Lecture 6" href="../L6/Lecture6.html" />
-    <link rel="prev" title="Lecture 3" href="../L3/Lecture3.html" /> 
+    <link rel="next" title="Surface Plasmons" href="../L6/Lecture6.html" />
+    <link rel="prev" title="Light scattering" href="../L3/Lecture3.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,9 +87,8 @@
             
               <p class="caption"><span class="caption-text">Lecture 2:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../L2/Lecture2.html">Lecture 2</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../L2/Lecture2.html#Light-scattering">Light scattering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../L2/Lecture2.html#Light-Scattering-from-a-Two-Level-System---Part-1">Light Scattering from a Two Level System - Part 1</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../L2/Lecture2.html">Light scattering</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L2/Lecture2.html#Light-Scattering-from-a-Two-Level-System---Part-I">Light Scattering from a Two Level System - Part I</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../L2/Lecture2.html#Rabi-oscillations">Rabi oscillations</a></li>
 </ul>
 </li>
@@ -98,16 +97,13 @@
 </ul>
 <p class="caption"><span class="caption-text">Lecture 3:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../L3/Lecture3.html">Lecture 3</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../L3/Lecture3.html">Light scattering</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../L3/Lecture3.html#Light-Scattering-from-a-Two-Level-System---Part-2">Light Scattering from a Two Level System - Part 2</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../L3/Lecture3.html#Rabi-oscillations">Rabi oscillations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../L3/Lecture3.html#Spontaneous-emission-and-the-density-matrix">Spontaneous emission and the density matrix</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../L3/Lecture3.html#Pure-and-mixed-states">Pure and mixed states</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../L3/Lecture3.html#The-density-matrix">The density matrix</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../L3/Lecture3.html#The-time-evolution-of-the-density-matrix-and-spontaneous-emission">The time evolution of the density matrix and spontaneous emission</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../L3/Lecture3.html#The-optical-Bloch-equations">The optical Bloch equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/Lecture3.html#Spontaneous-emission-and-the-density-matrix">Spontaneous emission and the density matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/Lecture3.html#The-optical-Bloch-equations">The optical Bloch equations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../L3/Lecture3.html#Photon-Scattering-Rate">Photon Scattering Rate</a></li>
 </ul>
 </li>
@@ -117,45 +113,61 @@
 </ul>
 <p class="caption"><span class="caption-text">Lecture 4:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Lecture 4</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#Light-Scattering">Light Scattering</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#General-Electromagnetic-Scattering-Appraoch">General Electromagnetic Scattering Appraoch</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Classical Light Scattering</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#General-Electromagnetic-Scattering-Appraoch">General Electromagnetic Scattering Appraoch</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#Rayleigh-Theory">Rayleigh Theory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Mie-Theory">Mie Theory</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#Mie-Scattering-Example-Calculations">Mie Scattering Example Calculations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Small-Particle-Scattering">Small Particle Scattering</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Large-Particle-Scattering">Large Particle Scattering</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="#Rayleigh-Theory">Rayleigh Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#Mie-Theory">Mie Theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Mie-Scattering-Example-Calculations">Mie Scattering Example Calculations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Small-Particle-Scattering">Small Particle Scattering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Large-Particle-Scattering">Large Particle Scattering</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Lecture 6:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../L6/Lecture6.html">Lecture 6</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Surface-Plasmons">Surface Plasmons</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Optical-properties-of-noble-metals">Optical properties of noble metals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L6/Lecture6.html">Surface Plasmons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Optical-properties-of-noble-metals">Optical properties of noble metals</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Drude-Sommerfeld-theory">Drude-Sommerfeld theory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Interband-transition">Interband transition</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Surface-plasmon-polaritons-at-plane-interfaces">Surface plasmon polaritons at plane interfaces</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Plot-the-dispersion-relation">Plot the dispersion relation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Plot-the-penetration-depth">Plot the penetration depth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Surface-plasmon-polaritons-at-plane-interfaces">Surface plasmon polaritons at plane interfaces</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Exciting-Surface-Plasmons">Exciting Surface Plasmons</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Otto-Konfiguration">Otto Konfiguration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Kretschmann-configuration">Kretschmann configuration</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lecture 7:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L7/Lecture7.html">Surface Plasmons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L7/Lecture7.html#Drude-Sommerfeld-theory-(repetition)">Drude-Sommerfeld theory (repetition)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L7/Lecture7.html#Interband-transition-(repetition)">Interband transition (repetition)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L7/Lecture7.html#Plasmons-at-planar-interfaces">Plasmons at planar interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Dispersion-relation">Dispersion relation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Plot-the-penetration-depth">Plot the penetration depth</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Calculation-of-the-angle-dependent-reflectivity">Calculation of the angle dependent reflectivity</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Angle-dependent-reflectivity-for-a-silver-layer-on-glass-with-air-on-top">Angle dependent reflectivity for a silver layer on glass with air on top</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L7/Lecture7.html#Exciting-Surface-Plasmons">Exciting Surface Plasmons</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Calculation-of-the-angle-dependent-reflectivity">Calculation of the angle dependent reflectivity</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../L7/Lecture7.html#Angle-dependent-reflectivity-for-a-silver-layer-on-glass-with-air-on-top">Angle dependent reflectivity for a silver layer on glass with air on top</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../L7/Lecture7.html#Angle-dependent-reflectivity-for-a-gold-layer-on-glass-with-air-on-top">Angle dependent reflectivity for a gold layer on glass with air on top</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Surface-plasmon-sensors">Surface plasmon sensors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Surface-plasmon-sensors">Surface plasmon sensors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../L7/Lecture7.html#Angle-dependent-reflectivity-for-a-silver-layer-on-glass-with-water-and-air-on-top">Angle dependent reflectivity for a silver layer on glass with water and air on top</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L7/Lecture7.html#Plasmons-Supported-by-Spherical-Particles---Quasi-Static-Approximation">Plasmons Supported by Spherical Particles - Quasi-Static Approximation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Plasmon-resonance-of-a-small-spherical-particle">Plasmon resonance of a small spherical particle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Comparison-to-Mie-scattering-calculations">Comparison to Mie scattering calculations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Radiation-Pressure">Radiation Pressure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Ellispoids">Ellispoids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Interactions-of-particle-plasmons">Interactions of particle plasmons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/Lecture7.html#Chains-of-metal-nanoparticles,-waveguides">Chains of metal nanoparticles, waveguides</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -203,7 +215,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Lecture 4</li>
+      <li>Classical Light Scattering</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -470,9 +482,8 @@ div.rendered_html tbody tr:hover {
 <p>This page was generated from <a href="#id1"><span class="problematic" id="id2">`source/notebooks/L4/Lecture4.ipynb`_</span></a>.
 <span class="raw-html"><br/><a href="https://mybinder.org/v2/gh/fcichos/photonics2/master?urlpath=lab/tree/source/notebooks/L4/Lecture4.ipynb"><img alt="Binder badge" src="https://img.shields.io/badge/launch-full%20binder-red.svg" style="vertical-align:text-bottom"></a></span></p>
 </div>
-<div class="section" id="Lecture-4">
-<h1>Lecture 4<a class="headerlink" href="#Lecture-4" title="Permalink to this headline">¶</a></h1>
-<p>Frank Cichos, SS2019</p>
+<div class="section" id="Classical-Light-Scattering">
+<h1>Classical Light Scattering<a class="headerlink" href="#Classical-Light-Scattering" title="Permalink to this headline">¶</a></h1>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -501,8 +512,6 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="section" id="Light-Scattering">
-<h2>Light Scattering<a class="headerlink" href="#Light-Scattering" title="Permalink to this headline">¶</a></h2>
 <p>The scattering of light may be thought of as the redirection of light that takes place when an electromagnetic (EM) wave encounters a scattering particle. As the EM wave interacts with the particle, the electrons in the particle’s constituent molecules are perturbed periodically with the frequency <span class="math notranslate nohighlight">\(\omega\)</span> of the electric field of the incident wave. The oscillation or perturbation of the electron cloud results in a periodic separation of charge within the molecule, which is called an
 induced dipole moment <span class="math notranslate nohighlight">\(\vec{p}(t)\)</span>. We have looked at these details from a semi-classical side with the help of the two level system in the lecture before.</p>
 <p>The majority of light scattered by the particle is emitted at the identical frequency <span class="math notranslate nohighlight">\(\omega\)</span> of the incident light, a process referred to as <strong>elastic scattering</strong>. In summary, the above comments describe the process of light scattering as a complex interaction between the incident EM wave and the molecular/atomic structure of the scattering object; hence light scattering is not simply a matter of incident photons or EM waves <em>bouncing</em> off the surface of an encountered object.</p>
@@ -537,7 +546,7 @@ a=\frac{4\pi \kappa}{\lambda}
 <p><strong>Rayleigh scattering</strong> now refers to the situation, when all particles are just point dipoles, so there is no interference from the scattering volumes of a particle itself. In the case of Mie scattering, the simplifications of the <strong>Rayleigh Debye Gans</strong> theory are dropped and exact calculation are carried out including the phase shifts in spherical particles as well as well as the proper boundary conditions between dielectrics. While <strong>Mie scattering</strong> is valid for all different sizes and
 generalized versions for inhomogeneous dielectric materials exist, the physical understanding is a bit lost due to the mathematical expansions carried out.</p>
 <div class="section" id="General-Electromagnetic-Scattering-Appraoch">
-<h3>General Electromagnetic Scattering Appraoch<a class="headerlink" href="#General-Electromagnetic-Scattering-Appraoch" title="Permalink to this headline">¶</a></h3>
+<h2>General Electromagnetic Scattering Appraoch<a class="headerlink" href="#General-Electromagnetic-Scattering-Appraoch" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Figure1" src="../../_images/Figure1.png" /></p>
 <p>The Figure above shows the spherical coordinate scattering geometry used for Mie and Rayleigh light scattering corresponding to an incident plane wave with a wavevector <span class="math notranslate nohighlight">\(\vec{k}\)</span> on a single spherical particle. Using this coordinate system, the scattering parameters may be defined for the Rayleigh and Mie solutions.</p>
 <p>For each scattering angle <span class="math notranslate nohighlight">\((\phi,\theta)\)</span>, the Equations</p>
@@ -589,7 +598,7 @@ I_{HH}=I_{0}\frac{1}{r^2}\frac{d\sigma_{HH}}{d\Omega}
 </div>
 </div>
 <div class="section" id="Rayleigh-Theory">
-<h2>Rayleigh Theory<a class="headerlink" href="#Rayleigh-Theory" title="Permalink to this headline">¶</a></h2>
+<h1>Rayleigh Theory<a class="headerlink" href="#Rayleigh-Theory" title="Permalink to this headline">¶</a></h1>
 <p>In the Rayleigh regime, the differential scattering cross sections are readily calculated from the following equations:</p>
 <p><span class="math">\begin{equation}
 \frac{d\sigma_{VV}}{d\Omega}=\frac{\lambda^2}{4\pi^2}\alpha^{6}\left | \frac{\bar{m}^2-1}{\bar{m}^2+2}\right |^{2}= k^{4}R^{6}\left ( \frac{\epsilon-\epsilon_{m}}{\epsilon+2\epsilon_{m}} \right )^{2}
@@ -612,7 +621,7 @@ the direct path of sunlight and subsequently redirected from all directions as s
 a dielectric particle ( <span class="math notranslate nohighlight">\(\kappa=0\)</span>), then <span class="math notranslate nohighlight">\(\sigma_{ext}=\sigma_{scat}\)</span>, as the contribution of absorption is identically zero (<span class="math notranslate nohighlight">\(\sigma_{abs}=0\)</span>).</p>
 </div>
 <div class="section" id="Mie-Theory">
-<h2>Mie Theory<a class="headerlink" href="#Mie-Theory" title="Permalink to this headline">¶</a></h2>
+<h1>Mie Theory<a class="headerlink" href="#Mie-Theory" title="Permalink to this headline">¶</a></h1>
 <p>Based on the theory of Mie, the differential scattering cross sections are defined in terms of the angular intensity functions <span class="math notranslate nohighlight">\(i_{1}\)</span> and <span class="math notranslate nohighlight">\(i_{2}\)</span>, as given by the expressions</p>
 <p><span class="math">\begin{equation}
 \frac{d\sigma_{VV}}{d\Omega}=\frac{\lambda^{2}}{4\pi^2}i_{1}
@@ -673,7 +682,7 @@ X_{n}(z)=-\sqrt{\frac{\pi z}{2}}Y_{n+1/2}(z)
 <p>noting that the absorption cross section is readily calculated from the above two.</p>
 <hr class="docutils" />
 <div class="section" id="Mie-Scattering-Example-Calculations">
-<h3>Mie Scattering Example Calculations<a class="headerlink" href="#Mie-Scattering-Example-Calculations" title="Permalink to this headline">¶</a></h3>
+<h2>Mie Scattering Example Calculations<a class="headerlink" href="#Mie-Scattering-Example-Calculations" title="Permalink to this headline">¶</a></h2>
 <p>There are a number of different packages around providing th erequired functions for Mie and thus also Rayleight scattering calculations. In the examples below I have used the Python package <strong>miepython</strong>, which is freely available for Python and allows a number of different calculations.</p>
 <p>The following example calculates the extinction efficiency <span class="math notranslate nohighlight">\(Q_{ext}=\sigma_{ext}/\pi R^2\)</span> as a function of the size parameter <span class="math notranslate nohighlight">\(\alpha=2\pi R/\lambda\)</span>. For small Rayleigh particles (refractive index <span class="math notranslate nohighlight">\(m=1.5\)</span>), the extinction cross section is much smaller than the geometric cross section. Later the extinction efficiency is displaying a oscillatory behavior, which is due to the interference of the scattering coming from different subvolumes of the particle. At very large particle
 sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating that the extinction cross section is twice as large as the geometric cross section. This surprising effect is known as the <strong>extinction paradox</strong> and is suggested to be due to the fact that an ideal extinction measurement is carried out at infinite distance from the object and thus also sensitive to diffraction of light around the particle.</p>
@@ -717,13 +726,13 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture4_15_1.png"><img alt="../../_images/notebooks_L4_Lecture4_15_1.png" src="../../_images/notebooks_L4_Lecture4_15_1.png" style="width: 734px; height: 440px;" /></a>
+<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture4_14_1.png"><img alt="../../_images/notebooks_L4_Lecture4_14_1.png" src="../../_images/notebooks_L4_Lecture4_14_1.png" style="width: 734px; height: 440px;" /></a>
 </div>
 </div>
 <p>The next example plots are showing the scaterring intensities of a particle of 5 times the wavelength radius and a refractive index of <span class="math notranslate nohighlight">\(m=1.5\)</span> as a function of the scattering angle <span class="math notranslate nohighlight">\(\theta\)</span>. The plots contain the logarithm of the differential scattering cross section for the two polarization directions as otherwise the backscattering would be only hardly visible. <strong>Large particles as compared to the wavelength are strongly scattering into the forward direction.</strong></p>
 </div>
 <div class="section" id="Small-Particle-Scattering">
-<h3>Small Particle Scattering<a class="headerlink" href="#Small-Particle-Scattering" title="Permalink to this headline">¶</a></h3>
+<h2>Small Particle Scattering<a class="headerlink" href="#Small-Particle-Scattering" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -762,12 +771,12 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture4_18_0.png"><img alt="../../_images/notebooks_L4_Lecture4_18_0.png" src="../../_images/notebooks_L4_Lecture4_18_0.png" style="width: 843px; height: 483px;" /></a>
+<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture4_17_0.png"><img alt="../../_images/notebooks_L4_Lecture4_17_0.png" src="../../_images/notebooks_L4_Lecture4_17_0.png" style="width: 843px; height: 483px;" /></a>
 </div>
 </div>
 </div>
 <div class="section" id="Large-Particle-Scattering">
-<h3>Large Particle Scattering<a class="headerlink" href="#Large-Particle-Scattering" title="Permalink to this headline">¶</a></h3>
+<h2>Large Particle Scattering<a class="headerlink" href="#Large-Particle-Scattering" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -806,14 +815,13 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture4_20_0.png"><img alt="../../_images/notebooks_L4_Lecture4_20_0.png" src="../../_images/notebooks_L4_Lecture4_20_0.png" style="width: 843px; height: 483px;" /></a>
+<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture4_19_0.png"><img alt="../../_images/notebooks_L4_Lecture4_19_0.png" src="../../_images/notebooks_L4_Lecture4_19_0.png" style="width: 843px; height: 483px;" /></a>
 </div>
 </div>
 <p>The last example demonstrates the scattering cross section as a function of the wavlength for gold nanoparticles.</p>
 <script type="application/vnd.jupyter.widget-state+json">
 {"state": {}, "version_major": 2, "version_minor": 0}
 </script></div>
-</div>
 </div>
 
 
@@ -824,10 +832,10 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../L6/Lecture6.html" class="btn btn-neutral float-right" title="Lecture 6" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../L6/Lecture6.html" class="btn btn-neutral float-right" title="Surface Plasmons" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../L3/Lecture3.html" class="btn btn-neutral float-left" title="Lecture 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../L3/Lecture3.html" class="btn btn-neutral float-left" title="Light scattering" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

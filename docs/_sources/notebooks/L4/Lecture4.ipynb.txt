@@ -2,14 +2,11 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "metadata": {},
+   "metadata": {
+    "toc-hr-collapsed": true
+   },
    "source": [
-    "# Lecture 4\n",
-    "\n",
-    "\n",
-    "\n",
-    "\n",
-    "Frank Cichos, SS2019"
+    "## Classical Light Scattering"
    ]
   },
   {
@@ -43,15 +40,6 @@
     "                     'xtick.direction' : 'in',\n",
     "                     'ytick.right' : True,\n",
     "                     'ytick.direction' : 'in',}) "
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "toc-hr-collapsed": true
-   },
-   "source": [
-    "## Light Scattering"
    ]
   },
   {
