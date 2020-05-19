@@ -1,0 +1,914 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction to Photonics II &mdash; Introduction to Photonics 2 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Introduction to Photonics 2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Lecture 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L2/Lecture2.html">Lecture 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L2/Lecture2.html#Light-scattering">Light scattering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L2/Lecture2.html#Light-Scattering-from-a-Two-Level-System---Part-1">Light Scattering from a Two Level System - Part 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L2/Lecture2.html#Rabi-oscillations">Rabi oscillations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lecture 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L3/Lecture3.html">Lecture 3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L3/Lecture3.html#Light-Scattering-from-a-Two-Level-System---Part-2">Light Scattering from a Two Level System - Part 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L3/Lecture3.html#Rabi-oscillations">Rabi oscillations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/Lecture3.html#Spontaneous-emission-and-the-density-matrix">Spontaneous emission and the density matrix</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../L3/Lecture3.html#Pure-and-mixed-states">Pure and mixed states</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../L3/Lecture3.html#The-density-matrix">The density matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../L3/Lecture3.html#The-time-evolution-of-the-density-matrix-and-spontaneous-emission">The time evolution of the density matrix and spontaneous emission</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/Lecture3.html#The-optical-Bloch-equations">The optical Bloch equations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/Lecture3.html#Photon-Scattering-Rate">Photon Scattering Rate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/Lecture3.html#Susceptibility-of-a-Two-Level-System">Susceptibility of a Two Level System</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Introduction to Photonics 2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduction to Photonics II</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/fcichos/photonics2/blob/master//source/notebooks/L4/Lecture4.ipynb" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    min-width: 5ex;
+    padding-top: 0.3rem;
+    padding-right: 0.3rem;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 0.3rem;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="admonition note">
+<p>This page was generated from <a href="#id1"><span class="problematic" id="id2">`source/notebooks/L4/Lecture4.ipynb`_</span></a>.
+<span class="raw-html"><br/><a href="https://mybinder.org/v2/gh/fcichos/photonics2/master?urlpath=lab/tree/source/notebooks/L4/Lecture4.ipynb"><img alt="Binder badge" src="https://img.shields.io/badge/launch-full%20binder-red.svg" style="vertical-align:text-bottom"></a></span></p>
+</div>
+<div class="section" id="Introduction-to-Photonics-II">
+<h1>Introduction to Photonics II<a class="headerlink" href="#Introduction-to-Photonics-II" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Lecture-4">
+<h2>Lecture 4<a class="headerlink" href="#Lecture-4" title="Permalink to this headline">¶</a></h2>
+<p>Frank Cichos, SS2019</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">miepython</span> <span class="k">as</span> <span class="nn">mp</span>
+
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = &#39;retina&#39;
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+                     <span class="s1">&#39;axes.titlesize&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+                     <span class="s1">&#39;axes.labelsize&#39;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+                     <span class="s1">&#39;axes.labelpad&#39;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+                     <span class="s1">&#39;lines.linewidth&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                     <span class="s1">&#39;lines.markersize&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+                     <span class="s1">&#39;xtick.labelsize&#39;</span> <span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+                     <span class="s1">&#39;ytick.labelsize&#39;</span> <span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+                     <span class="s1">&#39;xtick.top&#39;</span> <span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+                     <span class="s1">&#39;xtick.direction&#39;</span> <span class="p">:</span> <span class="s1">&#39;in&#39;</span><span class="p">,</span>
+                     <span class="s1">&#39;ytick.right&#39;</span> <span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+                     <span class="s1">&#39;ytick.direction&#39;</span> <span class="p">:</span> <span class="s1">&#39;in&#39;</span><span class="p">,})</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-2-3e50f40c4c8f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">import</span> numpy <span class="ansi-green-fg">as</span> np
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-green-fg">import</span> matplotlib<span class="ansi-blue-fg">.</span>pyplot <span class="ansi-green-fg">as</span> plt
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> miepython <span class="ansi-green-fg">as</span> mp
+<span class="ansi-green-intense-fg ansi-bold">      4</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> get_ipython<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>run_line_magic<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;matplotlib&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;inline&#39;</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;miepython&#39;
+</pre></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="Light-Scattering">
+<h1>Light Scattering<a class="headerlink" href="#Light-Scattering" title="Permalink to this headline">¶</a></h1>
+<p>The scattering of light may be thought of as the redirection of light that takes place when an electromagnetic (EM) wave encounters a scattering particle. As the EM wave interacts with the particle, the electrons in the particle’s constituent molecules are perturbed periodically with the frequency <span class="math notranslate nohighlight">\(\omega\)</span> of the electric field of the incident wave. The oscillation or perturbation of the electron cloud results in a periodic separation of charge within the molecule, which is called an
+induced dipole moment <span class="math notranslate nohighlight">\(\vec{p}(t)\)</span>. We have looked at these details from a semi-classical side with the help of the two level system in the lecture before.</p>
+<p>The majority of light scattered by the particle is emitted at the identical frequency <span class="math notranslate nohighlight">\(\omega\)</span> of the incident light, a process referred to as <strong>elastic scattering</strong>. In summary, the above comments describe the process of light scattering as a complex interaction between the incident EM wave and the molecular/atomic structure of the scattering object; hence light scattering is not simply a matter of incident photons or EM waves <em>bouncing</em> off the surface of an encountered object.</p>
+<p>Elastic light scattering may be categorized into different frameworks. The framework we will be looking at first is the Rayleight-Debye-Gans theory, which has some simplifications but gives us a general understanding of what is happening when light is scattered at the materials. We will then continue with</p>
+<ul class="simple">
+<li><p>Rayleigh Scattering</p></li>
+<li><p>Mie Scattering</p></li>
+</ul>
+<p>Rayleigh scattering is formulated for small, dielectric (non-absorbing), spherical particles. It actually arises as the small particle limit of Mie scattering that encompasses the general spherical scattering solution (absorbing or non-absorbing) without a particular bound on particle size. Accordingly, Mie scattering theory has no size limitations and converges to the limit of geometric optics for large particles. Mie theory, therefore, may be used for describing most spherical particle
+scattering systems, including Rayleigh scattering. However, Rayleigh scattering theory is generally preferred if applicable, due to the complexity of the Mie scattering formulation. The criteria for Rayleigh scattering is that</p>
+<p><span class="math">\begin{equation}
+\alpha<<1
+\end{equation}</span></p>
+<p>and</p>
+<p><span class="math">\begin{equation}
+|m| \alpha<<1
+\end{equation}</span></p>
+<p>where <span class="math notranslate nohighlight">\(\alpha&lt;&lt;1\)</span> is the dimensionless size parameter given by the expression</p>
+<p><span class="math">\begin{equation}
+\alpha=\frac{2\pi R}{\lambda}
+\end{equation}</span></p>
+<p>with <span class="math notranslate nohighlight">\(\lambda=\lambda_{0}/m_{0}\)</span>. Here <span class="math notranslate nohighlight">\(\lambda_{0}\)</span> is the vacuum wavelength, <span class="math notranslate nohighlight">\(m_{0}\)</span> the refractive index of the surrounding medium and <span class="math notranslate nohighlight">\(m\)</span> the refractive index of the particle, which can be in general complex, i.e. <span class="math notranslate nohighlight">\(m=n-i\, \kappa\)</span>. In this notation, <span class="math notranslate nohighlight">\(n\)</span> indicates the refraction of light (i.e. n equals the speed of light in vacuum divided by the speed of light in the material), while the complex term is related to absorption. The commonly used absorption
+coefficient of the material <span class="math notranslate nohighlight">\((cm^{-1})\)</span> is related to the complex part of the refractive index via the relation</p>
+<p><span class="math">\begin{equation}
+a=\frac{4\pi \kappa}{\lambda}
+\end{equation}</span></p>
+<p>It is noted that the value of <span class="math notranslate nohighlight">\(\kappa\)</span> is never exactly zero for any material, but materials with a value approaching zero are termed dielectrics. The magnitude of the refractive index, <span class="math notranslate nohighlight">\(|m|\)</span> , as needed for the Rayleigh criteria, is given by the expression</p>
+<p><span class="math">\begin{equation}
+|m|=\sqrt{n^{2}+\kappa^{2}}
+\end{equation}</span></p>
+<p>The Rayleigh criteria as related above, namely <span class="math notranslate nohighlight">\(\alpha &lt;&lt;1\)</span> and <span class="math notranslate nohighlight">\(|m|\alpha&lt;&lt;1\)</span>, correspond physically to the assumptions that the particle is sufficiently small such that the particle encounters a uniform electric field at any moment, accordingly the time for penetration of the electric field is much less than the period of oscillation of the EM wave.</p>
+<p><strong>Rayleigh scattering</strong> now refers to the situation, when all particles are just point dipoles, so there is no interference from the scattering volumes of a particle itself. In the case of Mie scattering, the simplifications of the <strong>Rayleigh Debye Gans</strong> theory are dropped and exact calculation are carried out including the phase shifts in spherical particles as well as well as the proper boundary conditions between dielectrics. While <strong>Mie scattering</strong> is valid for all different sizes and
+generalized versions for inhomogeneous dielectric materials exist, the physical understanding is a bit lost due to the mathematical expansions carried out.</p>
+<div class="section" id="General-Electromagnetic-Scattering-Appraoch">
+<h2>General Electromagnetic Scattering Appraoch<a class="headerlink" href="#General-Electromagnetic-Scattering-Appraoch" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Figure1" src="../../_images/Figure1.png" /></p>
+<p>The Figure above shows the spherical coordinate scattering geometry used for Mie and Rayleigh light scattering corresponding to an incident plane wave with a wavevector <span class="math notranslate nohighlight">\(\vec{k}\)</span> on a single spherical particle. Using this coordinate system, the scattering parameters may be defined for the Rayleigh and Mie solutions.</p>
+<p>For each scattering angle <span class="math notranslate nohighlight">\((\phi,\theta)\)</span>, the Equations</p>
+<p><span class="math">\begin{equation}
+I_{\phi}=I_{0}\frac{\lambda^2}{4\pi^2 r^{2}}i_{1}\sin(\phi)^2
+\end{equation}</span></p>
+<p>and</p>
+<p><span class="math">\begin{equation}
+I_{\theta}=I_{0}\frac{\lambda^2}{4\pi^2 r^{2}}i_{2}\cos(\phi)^2
+\end{equation}</span></p>
+<p>represent the intensities <span class="math notranslate nohighlight">\((W/cm^2)\)</span> of scattered radiation vertically and horizontally polarized with respect to the scattering plane, respectively, which is defined by the incident ray (of intensity <span class="math notranslate nohighlight">\(I_{0}\)</span>) and the scattered wavevector <span class="math notranslate nohighlight">\(\vec{k}_{s}\)</span>, noting the polarization state of the incident ray as shown in the Figure. The parameters <span class="math notranslate nohighlight">\(i_{1}\)</span> and <span class="math notranslate nohighlight">\(i_{2}\)</span> are the magniture square <span class="math notranslate nohighlight">\(i_{1}=|S_{1}|^2\)</span> and <span class="math notranslate nohighlight">\(i_{2}=|S_{2}|^2\)</span> elements of the amplitude
+scattering matrix (also called Jones matrix)</p>
+<p><span class="math">\begin{equation}
+\begin{bmatrix}
+S_{2} & S_{3}\\
+S_{4} & S_{1}\\
+\end{bmatrix}
+\end{equation}</span></p>
+<p>The Jones matrix connects the incident electric field components with the scattered electric field components with respect to the scattering plane.</p>
+<p><span class="math">\begin{equation}
+\begin{bmatrix}
+E_{|| s}\\
+E_{\perp s}
+\end{bmatrix}
+\propto
+\begin{bmatrix}
+S_{2} & S_{3}\\
+S_{4} & S_{1}
+\end{bmatrix}
+\begin{bmatrix}
+E_{||i}\\
+E_{\perp i}
+\end{bmatrix}
+\end{equation}</span></p>
+<p>However, more often, Stokes or Mueller polarimeters based on intensity measurements of polarized light are used. In that case, light of an arbitrary polarization can be represented by four numbers known as the Stokes parameters, <span class="math notranslate nohighlight">\(I,Q,U, V\)</span> with <span class="math notranslate nohighlight">\(I^2=Q^2+U^2+V^2\)</span>, where <span class="math notranslate nohighlight">\(I\)</span> refers to the intensity of the light, and the parameters <span class="math notranslate nohighlight">\(Q,U,V\)</span> represent the extent of the horizontal linear, $ 45^{<span class="math">\circ</span>}}$ linear, and circular polarization, respectively.In
+polarimetry, the Stokes vector <span class="math notranslate nohighlight">\(S\)</span> of a light beam is constructed based on six flux measurements obtained with different polarization analyzers in front of the detector, represent the extent of the horizontal linear, 45 deg linear, and circular polarization, respectively.</p>
+<p><img alt="Figure 1" src="../../_images/Stokes.png" /></p>
+<p>The incident Stokes vector <span class="math notranslate nohighlight">\(S_{i}\)</span> and the scattered Stokes Vector <span class="math notranslate nohighlight">\(S_{scat}\)</span> are then connected by the so called Müller matrix <span class="math notranslate nohighlight">\(M\)</span></p>
+<p><span class="math">\begin{equation}
+{\bf S}_{scat}=M\,{\bf S} _{i}
+\end{equation}</span></p>
+<p>Here, we continue with the simpler amplitude scattering matrix described above. For perfectly spherical particles, polarized incident radiation produces similarly polarized scattered radiation (i.e. <span class="math notranslate nohighlight">\(S_{3}=S_{4}=0\)</span>); hence the scattering problem may be redefined in terms of the polarization states with respect to the scattering plane. Accordingly, the two above equations may be recast in terms of the differential scattering cross sections <span class="math notranslate nohighlight">\((cm^2/sr)\)</span>, namely</p>
+<p><span class="math">\begin{equation}
+I_{VV}=I_{0}\frac{1}{r^2}\frac{d\sigma_{VV}}{d\Omega}
+\end{equation}</span></p>
+<p><span class="math">\begin{equation}
+I_{HH}=I_{0}\frac{1}{r^2}\frac{d\sigma_{HH}}{d\Omega}
+\end{equation}</span></p>
+</div>
+<div class="section" id="Rayleigh-Theory">
+<h2>Rayleigh Theory<a class="headerlink" href="#Rayleigh-Theory" title="Permalink to this headline">¶</a></h2>
+<p>In the Rayleigh regime, the differential scattering cross sections are readily calculated from the following equations:</p>
+<p><span class="math">\begin{equation}
+\frac{d\sigma_{VV}}{d\Omega}=\frac{\lambda^2}{4\pi^2}\alpha^{6}\left | \frac{\bar{m}^2-1}{\bar{m}^2+2}\right |^{2}= k^{4}R^{6}\left ( \frac{\epsilon-\epsilon_{m}}{\epsilon+2\epsilon_{m}} \right )^{2}
+\end{equation}</span></p>
+<p>and</p>
+<p><span class="math">\begin{equation}
+\frac{d\sigma_{HH}}{d\Omega}=\frac{d\sigma_{VV}}{d\Omega} \cos(\theta)^{2}=k^{4}R^{6}\left ( \frac{\epsilon-\epsilon_{m}}{\epsilon+2\epsilon_{m}} \right )^{2}\cos(\theta)^2
+\end{equation}</span></p>
+<p>Examination of these equations reveals several interesting items. Functionally, the differential scattering cross sections are proportional to the 6th power of particle size <span class="math notranslate nohighlight">\(R\)</span>, and are inversely proportional to the 4th power of wavelength <span class="math notranslate nohighlight">\(\lambda\)</span>. This latter dependency gives rise to the blue color of our sky, as the air molecules (e.g. <span class="math notranslate nohighlight">\(N_2\)</span> and <span class="math notranslate nohighlight">\(O_2\)</span>) are well within the Rayleigh regime; hence the shorter blue light of the sun is more efficiently redirected out of
+the direct path of sunlight and subsequently redirected from all directions as scattered light. In addition, note that the vertical-vertical differential scattering cross section is independent of the observation angle <span class="math notranslate nohighlight">\(\theta\)</span>, while the horizontal-horizontal differential scattering cross section has a minimum at <span class="math notranslate nohighlight">\(90^{\circ}\)</span>. This implies that unpolarized light will be strongly polarized at <span class="math notranslate nohighlight">\(90^{\circ}\)</span> observation for Rayleigh particles.</p>
+<p>The total scattering cross section (<span class="math notranslate nohighlight">\(cm^2\)</span>) and absorption cross section (<span class="math notranslate nohighlight">\(cm^2\)</span>) are defined as</p>
+<p><span class="math">\begin{equation}
+\sigma_{scat}=\frac{2\lambda^2}{3\pi}\alpha^{6}\left | \frac{\bar{m}^2-1}{\bar{m}^2+2}\right |^{2}
+\end{equation}</span></p>
+<p><span class="math">\begin{equation}
+\sigma_{abs}=\frac{-\lambda^2}{\pi}\alpha^{3}Im\left \lbrace\frac{\bar{m}^2-1}{\bar{m}^2+2}\right \rbrace
+\end{equation}</span></p>
+<p>Note that <span class="math notranslate nohighlight">\(\alpha\)</span> is the size parameter <span class="math notranslate nohighlight">\(\alpha=2\pi R/\lambda\)</span>. Finally, the total extinction cross section (<span class="math notranslate nohighlight">\(cm^2\)</span>) is defined as a sum of the scattering and absorption cross sections.</p>
+<p>As represented by the cross sections, the scattering cross section scales with <span class="math notranslate nohighlight">\(R^6\)</span>, while the absorption cross section is proportional to <span class="math notranslate nohighlight">\(R^{3}\)</span>. In the Rayleigh regime, the size parameter must be much less than unity, therefore the contribution of scattering (i.e. <span class="math notranslate nohighlight">\(\sigma_{scate}\)</span> ) to the total extinction cross section is generally neglected for an absorbing particle ( <span class="math notranslate nohighlight">\(\kappa\neq 0\)</span> ), and it is therefore assumed that <span class="math notranslate nohighlight">\(\sigma_{ext}=\sigma_{abs}\)</span>. However, for
+a dielectric particle ( <span class="math notranslate nohighlight">\(\kappa=0\)</span>), then <span class="math notranslate nohighlight">\(\sigma_{ext}=\sigma_{scat}\)</span>, as the contribution of absorption is identically zero (<span class="math notranslate nohighlight">\(\sigma_{abs}=0\)</span>).</p>
+</div>
+<div class="section" id="Mie-Theory">
+<h2>Mie Theory<a class="headerlink" href="#Mie-Theory" title="Permalink to this headline">¶</a></h2>
+<p>Based on the theory of Mie, the differential scattering cross sections are defined in terms of the angular intensity functions <span class="math notranslate nohighlight">\(i_{1}\)</span> and <span class="math notranslate nohighlight">\(i_{2}\)</span>, as given by the expressions</p>
+<p><span class="math">\begin{equation}
+\frac{d\sigma_{VV}}{d\Omega}=\frac{\lambda^{2}}{4\pi^2}i_{1}
+\end{equation}</span></p>
+<p>and</p>
+<p><span class="math">\begin{equation}
+\frac{d\sigma_{HH}}{d\Omega}=\frac{\lambda^{2}}{4\pi^2}i_{2}
+\end{equation}</span></p>
+<p>As before, the above two equations are averaged to define the differential scattering cross section for unpolarized incident light, which gives the relation</p>
+<p><span class="math">\begin{equation}
+\frac{d\sigma_{scat}}{d\Omega}=\frac{\lambda^{2}}{8\pi^2}(i_{1}+i_{2})
+\end{equation}</span></p>
+<p>In this formulation, the intensity functions are calculated from the infinite series given by</p>
+<p><span class="math">\begin{equation}
+i_{1}=\left |\sum_{n=1}^{\infty}\frac{2n+1}{n(n+1}[a_{n}\pi_{n}(\cos(\theta))+b_{n}\tau_{n}(\cos(\theta))] \right|^{2}
+\end{equation}</span></p>
+<p><span class="math">\begin{equation}
+i_{2}=\left |\sum_{n=1}^{\infty}\frac{2n+1}{n(n+1}[a_{n}\tau_{n}(\cos(\theta))+b_{n}\pi_{n}(\cos(\theta))] \right|^{2}
+\end{equation}</span></p>
+<p>In these equations, the angular dependent functions <span class="math notranslate nohighlight">\(\pi_{n}\)</span> and <span class="math notranslate nohighlight">\(\tau_{n}\)</span> are expressed in terms of the Legendre polynomials by</p>
+<p><span class="math">\begin{equation}
+\pi_{n}(\cos(\theta))=\frac{P_{n}^{(1)}(\cos(\theta))}{\sin(\theta)}
+\end{equation}</span></p>
+<p>and</p>
+<p><span class="math">\begin{equation}
+\tau_{n}(\cos(\theta))=\frac{dP_{n}^{(1)}(\cos(\theta))}{d\theta}
+\end{equation}</span></p>
+<p>where the parameters <span class="math notranslate nohighlight">\(a_{n}\)</span> and <span class="math notranslate nohighlight">\(b_{n}\)</span> are defined as</p>
+<p><span class="math">\begin{equation}
+a_{n}=\frac{\Psi_{n}(\alpha)\Psi_{n}^{\prime}(m\alpha)-m\Psi_{n}(m\alpha)\Psi_{n}^{\prime}(\alpha)}{\xi_{n}(\alpha)\Psi_{n}^{\prime}(m\alpha)-m\Psi_{n}(m\alpha)\xi_{n}^{\prime}(\alpha)}
+\end{equation}</span></p>
+<p><span class="math">\begin{equation}
+b_{n}=\frac{m\Psi_{n}(\alpha)\Psi_{n}^{\prime}(m\alpha)-\Psi_{n}(m\alpha)\Psi_{n}^{\prime}(\alpha)}{m\xi_{n}(\alpha)\Psi_{n}^{\prime}(m\alpha)-\Psi_{n}(m\alpha)\xi_{n}^{\prime}(\alpha)}
+\end{equation}</span></p>
+<p>The size parameter <span class="math notranslate nohighlight">\(\alpha\)</span> is defined using</p>
+<p><span class="math">\begin{equation}
+\alpha=\frac{2\pi R m_{0}}{\lambda_{0}}
+\end{equation}</span></p>
+<p>The Ricatti-Bessel functions <span class="math notranslate nohighlight">\(\Psi\)</span> and <span class="math notranslate nohighlight">\(\xi\)</span> are defined in terms of the half-integer-order Bessel function of the first kind (<span class="math notranslate nohighlight">\(J_{n+1/2}(z)\)</span>), where</p>
+<p><span class="math">\begin{equation}
+\Psi_{n}(z)=\sqrt{\frac{\pi z}{2}} J_{n+1/2}(z)
+\end{equation}</span></p>
+<p><span class="math">\begin{equation}
+\xi_{n}(z)=\sqrt{\frac{\pi z}{2}} H_{n+1/2}(z)=\Psi_{n}(z)+iX_{n}(z)
+\end{equation}</span></p>
+<p>where <span class="math notranslate nohighlight">\(H_{n+1/2}(z)\)</span> is the half-integer-order Hankel function of the second kind, where the parameter <span class="math notranslate nohighlight">\(X_{n}\)</span> is defined in terms of the half-integer-order Bessel function of the second kind, $Y_{n+1/2}(z), namely</p>
+<p><span class="math">\begin{equation}
+X_{n}(z)=-\sqrt{\frac{\pi z}{2}}Y_{n+1/2}(z)
+\end{equation}</span></p>
+<p>Finally, the total extinction and scattering cross sections are expressed as</p>
+<p><span class="math">\begin{equation}
+\sigma_{ext}=\frac{\lambda^{2}}{2\pi}\sum_{n=0}^{\infty}(2n+1)Re\{a_{n}+b_{n}\}
+\end{equation}</span></p>
+<p>and</p>
+<p><span class="math">\begin{equation}
+\sigma_{scat}=\frac{\lambda^{2}}{2\pi}\sum_{n=0}^{\infty}(2n+1)(|a_{n}|^2+|b_{n}|^2)
+\end{equation}</span></p>
+<p>noting that the absorption cross section is readily calculated from the above two.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="Mie-Scattering-Example-Calculations">
+<h2>Mie Scattering Example Calculations<a class="headerlink" href="#Mie-Scattering-Example-Calculations" title="Permalink to this headline">¶</a></h2>
+<p>There are a number of different packages around providing th erequired functions for Mie and thus also Rayleight scattering calculations. In the examples below I have used the Python package <strong>miepython</strong>, which is freely available for Python and allows a number of different calculations.</p>
+<p>The following example calculates the extinction efficiency <span class="math notranslate nohighlight">\(Q_{ext}=\sigma_{ext}/\pi R^2\)</span> as a function of the size parameter <span class="math notranslate nohighlight">\(\alpha=2\pi R/\lambda\)</span>. For small Rayleigh particles (refractive index <span class="math notranslate nohighlight">\(m=1.5\)</span>), the extinction cross section is much smaller than the geometric cross section. Later the extinction efficiency is displaying a oscillatory behavior, which is due to the interference of the scattering coming from different subvolumes of the particle. At very large particle
+sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating that the extinction cross section is twice as large as the geometric cross section. This surprising effect is known as the <strong>extinction paradox</strong> and is suggested to be due to the fact that an ideal extinction measurement is carried out at infinite distance from the object and thus also sensitive to diffraction of light around the particle.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">2000</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="n">num</span><span class="p">)</span>
+<span class="n">qqext1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<span class="n">qqext2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="p">:</span>
+    <span class="n">qext</span><span class="p">,</span> <span class="n">qsca</span><span class="p">,</span> <span class="n">qback</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">mie</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">qqext1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">qsca</span>
+    <span class="n">qext</span><span class="p">,</span> <span class="n">qsca</span><span class="p">,</span> <span class="n">qback</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">mie</span><span class="p">(</span><span class="mf">1.5</span><span class="o">-</span><span class="mf">0.1</span><span class="n">j</span><span class="p">,</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">qqext2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">qext</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">532</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="p">,</span><span class="n">qqext1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Size Parameter ($\alpha$)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ewxtinction efficiency $Q_ext$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-3edc0045b61d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> num <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">2000</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>x <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>linspace<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">20</span><span class="ansi-blue-fg">,</span>num<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> qqext1 <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span>num<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> qqext2 <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span>num<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;np&#39; is not defined
+</pre></div></div>
+</div>
+<p>The next example plots are showing the scaterring intensities of a particle of 5 times the wavelength radius and a refractive index of <span class="math notranslate nohighlight">\(m=1.5\)</span> as a function of the scattering angle <span class="math notranslate nohighlight">\(\theta\)</span>. The plots contain the logarithm of the differential scattering cross section for the two polarization directions as otherwise the backscattering would be only hardly visible. <strong>Large particles as compared to the wavelength are strongly scattering into the forward direction.</strong></p>
+<div class="section" id="Small-Particle-Scattering">
+<h3>Small Particle Scattering<a class="headerlink" href="#Small-Particle-Scattering" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">m</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">n_env</span><span class="o">=</span><span class="mf">1.33</span>
+<span class="n">lam</span><span class="o">=</span><span class="mi">532</span> <span class="c1">#nm</span>
+<span class="n">R</span><span class="o">=</span><span class="mi">50</span> <span class="c1"># in nm</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="p">(</span><span class="n">lam</span><span class="o">/</span><span class="n">n_env</span><span class="p">)</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">180</span><span class="p">,</span><span class="mi">180</span><span class="p">,</span><span class="mi">180</span><span class="p">)</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="mi">180</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="n">scat_par</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">i_par</span><span class="p">(</span><span class="n">m</span><span class="o">/</span><span class="n">n_env</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mu</span><span class="p">)</span>
+<span class="n">scat_per</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">i_per</span><span class="p">(</span><span class="n">m</span><span class="o">/</span><span class="n">n_env</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mu</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;polar&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="mi">180</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">scat_par</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="mi">180</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">scat_per</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_rticks</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;m=1.5, Sphere Radius = </span><span class="si">{}</span><span class="s1"> nm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">R</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">theta</span><span class="p">,(</span><span class="n">scat_par</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">theta</span><span class="p">,(</span><span class="n">scat_per</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Exit Angle [degrees]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Unpolarized Scattered light [1/sr]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;m=1.5, Sphere Radius = </span><span class="si">{}</span><span class="s1"> nm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">R</span><span class="p">))</span>
+<span class="c1">#plt.ylim(0.00,0.2)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture4_18_0.png"><img alt="../../_images/notebooks_L4_Lecture4_18_0.png" src="../../_images/notebooks_L4_Lecture4_18_0.png" style="width: 843px; height: 483px;" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="Large-Particle-Scattering">
+<h3>Large Particle Scattering<a class="headerlink" href="#Large-Particle-Scattering" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">m</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">n_env</span><span class="o">=</span><span class="mf">1.33</span>
+<span class="n">lam</span><span class="o">=</span><span class="mi">532</span> <span class="c1">#nm</span>
+<span class="n">R</span><span class="o">=</span><span class="mi">500</span> <span class="c1"># in nm</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="p">(</span><span class="n">lam</span><span class="o">/</span><span class="n">n_env</span><span class="p">)</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">180</span><span class="p">,</span><span class="mi">180</span><span class="p">,</span><span class="mi">180</span><span class="p">)</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="mi">180</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="n">scat_par</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">i_par</span><span class="p">(</span><span class="n">m</span><span class="o">/</span><span class="n">n_env</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mu</span><span class="p">)</span>
+<span class="n">scat_per</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">i_per</span><span class="p">(</span><span class="n">m</span><span class="o">/</span><span class="n">n_env</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">mu</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;polar&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="mi">180</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">scat_par</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="mi">180</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">scat_per</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_rticks</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;m=1.5, Sphere Radius = </span><span class="si">{}</span><span class="s1"> nm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">R</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">theta</span><span class="p">,(</span><span class="n">scat_par</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">theta</span><span class="p">,(</span><span class="n">scat_per</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Exit Angle [degrees]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Unpolarized Scattered light [1/sr]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;m=1.5, Sphere Radius = </span><span class="si">{}</span><span class="s1"> nm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">R</span><span class="p">))</span>
+<span class="c1">#plt.ylim(0.00,0.2)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture4_20_0.png"><img alt="../../_images/notebooks_L4_Lecture4_20_0.png" src="../../_images/notebooks_L4_Lecture4_20_0.png" style="width: 843px; height: 483px;" /></a>
+</div>
+</div>
+<p>The last example demonstrates the scattering cross section as a function of the wavlength for gold nanoparticles.</p>
+</div>
+<div class="section" id="Gold-Particle-Scattering">
+<h3>Gold Particle Scattering<a class="headerlink" href="#Gold-Particle-Scattering" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="c1"># from https://refractiveindex.info/?shelf=main&amp;book=Au&amp;page=Johnson</span>
+<span class="c1"># wavelength in microns</span>
+<span class="n">ref_lam</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1879</span><span class="p">,</span><span class="mf">0.1916</span><span class="p">,</span><span class="mf">0.1953</span><span class="p">,</span><span class="mf">0.1993</span><span class="p">,</span><span class="mf">0.2033</span><span class="p">,</span><span class="mf">0.2073</span><span class="p">,</span><span class="mf">0.2119</span><span class="p">,</span><span class="mf">0.2164</span><span class="p">,</span><span class="mf">0.2214</span><span class="p">,</span><span class="mf">0.2262</span><span class="p">,</span><span class="mf">0.2313</span><span class="p">,</span><span class="mf">0.2371</span><span class="p">,</span><span class="mf">0.2426</span><span class="p">,</span><span class="mf">0.2490</span><span class="p">,</span><span class="mf">0.2551</span><span class="p">,</span><span class="mf">0.2616</span><span class="p">,</span><span class="mf">0.2689</span><span class="p">,</span><span class="mf">0.2761</span><span class="p">,</span><span class="mf">0.2844</span><span class="p">,</span><span class="mf">0.2924</span><span class="p">,</span><span class="mf">0.3009</span><span class="p">,</span><span class="mf">0.3107</span><span class="p">,</span><span class="mf">0.3204</span><span class="p">,</span><span class="mf">0.3315</span><span class="p">,</span><span class="mf">0.3425</span><span class="p">,</span><span class="mf">0.3542</span><span class="p">,</span><span class="mf">0.3679</span><span class="p">,</span><span class="mf">0.3815</span><span class="p">,</span><span class="mf">0.3974</span><span class="p">,</span><span class="mf">0.4133</span><span class="p">,</span><span class="mf">0.4305</span><span class="p">,</span><span class="mf">0.4509</span><span class="p">,</span><span class="mf">0.4714</span><span class="p">,</span><span class="mf">0.4959</span><span class="p">,</span><span class="mf">0.5209</span><span class="p">,</span><span class="mf">0.5486</span><span class="p">,</span><span class="mf">0.5821</span><span class="p">,</span><span class="mf">0.6168</span><span class="p">,</span><span class="mf">0.6595</span><span class="p">,</span><span class="mf">0.7045</span><span class="p">,</span><span class="mf">0.7560</span><span class="p">,</span><span class="mf">0.8211</span><span class="p">,</span><span class="mf">0.8920</span><span class="p">,</span><span class="mf">0.9840</span><span class="p">,</span><span class="mf">1.0880</span><span class="p">,</span><span class="mf">1.2160</span><span class="p">,</span><span class="mf">1.3930</span><span class="p">,</span><span class="mf">1.6100</span><span class="p">,</span><span class="mf">1.9370</span><span class="p">])</span>
+<span class="n">ref_n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.28</span><span class="p">,</span><span class="mf">1.32</span><span class="p">,</span><span class="mf">1.34</span><span class="p">,</span><span class="mf">1.33</span><span class="p">,</span><span class="mf">1.33</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.31</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.32</span><span class="p">,</span><span class="mf">1.32</span><span class="p">,</span><span class="mf">1.33</span><span class="p">,</span><span class="mf">1.33</span><span class="p">,</span><span class="mf">1.35</span><span class="p">,</span><span class="mf">1.38</span><span class="p">,</span><span class="mf">1.43</span><span class="p">,</span><span class="mf">1.47</span><span class="p">,</span><span class="mf">1.49</span><span class="p">,</span><span class="mf">1.53</span><span class="p">,</span><span class="mf">1.53</span><span class="p">,</span><span class="mf">1.54</span><span class="p">,</span><span class="mf">1.48</span><span class="p">,</span><span class="mf">1.48</span><span class="p">,</span><span class="mf">1.50</span><span class="p">,</span><span class="mf">1.48</span><span class="p">,</span><span class="mf">1.46</span><span class="p">,</span><span class="mf">1.47</span><span class="p">,</span><span class="mf">1.46</span><span class="p">,</span><span class="mf">1.45</span><span class="p">,</span><span class="mf">1.38</span><span class="p">,</span><span class="mf">1.31</span><span class="p">,</span><span class="mf">1.04</span><span class="p">,</span><span class="mf">0.62</span><span class="p">,</span><span class="mf">0.43</span><span class="p">,</span><span class="mf">0.29</span><span class="p">,</span><span class="mf">0.21</span><span class="p">,</span><span class="mf">0.14</span><span class="p">,</span><span class="mf">0.13</span><span class="p">,</span><span class="mf">0.14</span><span class="p">,</span><span class="mf">0.16</span><span class="p">,</span><span class="mf">0.17</span><span class="p">,</span><span class="mf">0.22</span><span class="p">,</span><span class="mf">0.27</span><span class="p">,</span><span class="mf">0.35</span><span class="p">,</span><span class="mf">0.43</span><span class="p">,</span><span class="mf">0.56</span><span class="p">,</span><span class="mf">0.92</span><span class="p">])</span>
+<span class="n">ref_k</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.188</span><span class="p">,</span><span class="mf">1.203</span><span class="p">,</span><span class="mf">1.226</span><span class="p">,</span><span class="mf">1.251</span><span class="p">,</span><span class="mf">1.277</span><span class="p">,</span><span class="mf">1.304</span><span class="p">,</span><span class="mf">1.350</span><span class="p">,</span><span class="mf">1.387</span><span class="p">,</span><span class="mf">1.427</span><span class="p">,</span><span class="mf">1.460</span><span class="p">,</span><span class="mf">1.497</span><span class="p">,</span><span class="mf">1.536</span><span class="p">,</span><span class="mf">1.577</span><span class="p">,</span><span class="mf">1.631</span><span class="p">,</span><span class="mf">1.688</span><span class="p">,</span><span class="mf">1.749</span><span class="p">,</span><span class="mf">1.803</span><span class="p">,</span><span class="mf">1.847</span><span class="p">,</span><span class="mf">1.869</span><span class="p">,</span><span class="mf">1.878</span><span class="p">,</span><span class="mf">1.889</span><span class="p">,</span><span class="mf">1.893</span><span class="p">,</span><span class="mf">1.898</span><span class="p">,</span><span class="mf">1.883</span><span class="p">,</span><span class="mf">1.871</span><span class="p">,</span><span class="mf">1.866</span><span class="p">,</span><span class="mf">1.895</span><span class="p">,</span><span class="mf">1.933</span><span class="p">,</span><span class="mf">1.952</span><span class="p">,</span><span class="mf">1.958</span><span class="p">,</span><span class="mf">1.948</span><span class="p">,</span><span class="mf">1.914</span><span class="p">,</span><span class="mf">1.849</span><span class="p">,</span><span class="mf">1.833</span><span class="p">,</span><span class="mf">2.081</span><span class="p">,</span><span class="mf">2.455</span><span class="p">,</span><span class="mf">2.863</span><span class="p">,</span><span class="mf">3.272</span><span class="p">,</span><span class="mf">3.697</span><span class="p">,</span><span class="mf">4.103</span><span class="p">,</span><span class="mf">4.542</span><span class="p">,</span><span class="mf">5.083</span><span class="p">,</span><span class="mf">5.663</span><span class="p">,</span><span class="mf">6.350</span><span class="p">,</span><span class="mf">7.150</span><span class="p">,</span><span class="mf">8.145</span><span class="p">,</span><span class="mf">9.519</span><span class="p">,</span><span class="mf">11.21</span><span class="p">,</span><span class="mf">13.78</span><span class="p">])</span>
+
+
+<span class="c1">#interpolate refractive index data</span>
+<span class="n">inter_lam</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.300</span><span class="p">,</span><span class="mf">1.00</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">inter_n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">inter_lam</span><span class="p">,</span> <span class="n">ref_lam</span><span class="p">,</span> <span class="n">ref_n</span><span class="p">)</span>
+<span class="n">inter_k</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">inter_lam</span><span class="p">,</span> <span class="n">ref_lam</span><span class="p">,</span> <span class="n">ref_k</span><span class="p">)</span>
+
+<span class="n">radius</span> <span class="o">=</span> <span class="mf">0.04</span>                <span class="c1"># in microns</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">inter_lam</span><span class="p">)</span>
+<span class="n">n_env</span><span class="o">=</span><span class="mf">1.5</span> <span class="c1">#water around</span>
+<span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">inter_n</span><span class="o">-</span><span class="mf">1.0</span><span class="n">j</span><span class="o">*</span><span class="n">inter_k</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="o">/</span><span class="p">(</span><span class="n">inter_lam</span><span class="o">/</span><span class="n">n_env</span><span class="p">)</span>
+
+<span class="n">qqabs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<span class="n">qqsca</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="p">:</span>
+    <span class="n">qext</span><span class="p">,</span> <span class="n">qsca</span><span class="p">,</span> <span class="n">qback</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">miepython</span><span class="o">.</span><span class="n">mie</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">n_env</span><span class="p">,</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">qabs</span> <span class="o">=</span> <span class="n">qext</span> <span class="o">-</span> <span class="n">qsca</span>
+    <span class="n">qqabs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">qabs</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">qqsca</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">qsca</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">inter_lam</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="n">qqabs</span><span class="o">*</span><span class="mf">1e6</span><span class="p">,</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$\sigma_</span><span class="si">{abs}</span><span class="s1">$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">inter_lam</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="n">qqsca</span><span class="o">*</span><span class="mf">1e6</span><span class="p">,</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$\sigma_</span><span class="si">{scat}</span><span class="s1">$&#39;</span><span class="p">)</span>
+<span class="c1">#plt.plot(inter_lam*1000, qqsca*1e6, color=&#39;red&#39;,label=&#39;scattering&#39;)</span>
+
+<span class="c1">#plt.title(r&quot;Gold Spheres {} nm diameter&quot;.format(2*radius*1000))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Wavelength (nm)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Cross Section (nm$^2$)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="mi">800</span><span class="p">)</span>
+<span class="c1">#plt.ylim(0,15000)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-10-5f99d8d3201e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     21</span>
+<span class="ansi-green-intense-fg ansi-bold">     22</span> <span class="ansi-green-fg">for</span> i <span class="ansi-green-fg">in</span> range<span class="ansi-blue-fg">(</span>num<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 23</span><span class="ansi-red-fg">     </span>qext<span class="ansi-blue-fg">,</span> qsca<span class="ansi-blue-fg">,</span> qback<span class="ansi-blue-fg">,</span> g <span class="ansi-blue-fg">=</span> miepython<span class="ansi-blue-fg">.</span>mie<span class="ansi-blue-fg">(</span>m<span class="ansi-blue-fg">[</span>i<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">/</span>n_env<span class="ansi-blue-fg">,</span>x<span class="ansi-blue-fg">[</span>i<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     24</span>     qabs <span class="ansi-blue-fg">=</span> qext <span class="ansi-blue-fg">-</span> qsca
+<span class="ansi-green-intense-fg ansi-bold">     25</span>     qqabs<span class="ansi-blue-fg">[</span>i<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">=</span>qabs<span class="ansi-blue-fg">*</span>np<span class="ansi-blue-fg">.</span>pi<span class="ansi-blue-fg">*</span>radius<span class="ansi-blue-fg">**</span><span class="ansi-cyan-fg">2</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;miepython&#39; is not defined
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {}, "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Frank Cichos
+      <span class="lastupdated">
+        Last updated on May 19, 2020.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
