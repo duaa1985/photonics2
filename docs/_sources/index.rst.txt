@@ -32,7 +32,7 @@ Welcome to the Introduction to Photonics 2 Course!
    notebooks/L4/Lecture4.ipynb
 
 
- .. toctree::
+.. toctree::
     :maxdepth: 2
     :caption: Lecture 6:
 

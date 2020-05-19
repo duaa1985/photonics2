@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction to Photonics II &mdash; Introduction to Photonics 2 1 documentation</title>
+  <title>Lecture 4 &mdash; Introduction to Photonics 2 1 documentation</title>
   
 
   
@@ -39,7 +39,9 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Lecture 6" href="../L6/Lecture6.html" />
+    <link rel="prev" title="Lecture 3" href="../L3/Lecture3.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -113,6 +115,50 @@
 </ul>
 </li>
 </ul>
+<p class="caption"><span class="caption-text">Lecture 4:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lecture 4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Light-Scattering">Light Scattering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#General-Electromagnetic-Scattering-Appraoch">General Electromagnetic Scattering Appraoch</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Rayleigh-Theory">Rayleigh Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Mie-Theory">Mie Theory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Mie-Scattering-Example-Calculations">Mie Scattering Example Calculations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Small-Particle-Scattering">Small Particle Scattering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Large-Particle-Scattering">Large Particle Scattering</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lecture 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L6/Lecture6.html">Lecture 6</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Surface-Plasmons">Surface Plasmons</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Optical-properties-of-noble-metals">Optical properties of noble metals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Drude-Sommerfeld-theory">Drude-Sommerfeld theory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Interband-transition">Interband transition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Surface-plasmon-polaritons-at-plane-interfaces">Surface plasmon polaritons at plane interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Plot-the-dispersion-relation">Plot the dispersion relation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Plot-the-penetration-depth">Plot the penetration depth</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Exciting-Surface-Plasmons">Exciting Surface Plasmons</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Otto-Konfiguration">Otto Konfiguration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Kretschmann-configuration">Kretschmann configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Calculation-of-the-angle-dependent-reflectivity">Calculation of the angle dependent reflectivity</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L6/Lecture6.html#Angle-dependent-reflectivity-for-a-silver-layer-on-glass-with-air-on-top">Angle dependent reflectivity for a silver layer on glass with air on top</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L6/Lecture6.html#Surface-plasmon-sensors">Surface plasmon sensors</a></li>
+</ul>
+</li>
+</ul>
 
             
           
@@ -157,7 +203,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Introduction to Photonics II</li>
+      <li>Lecture 4</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -424,13 +470,11 @@ div.rendered_html tbody tr:hover {
 <p>This page was generated from <a href="#id1"><span class="problematic" id="id2">`source/notebooks/L4/Lecture4.ipynb`_</span></a>.
 <span class="raw-html"><br/><a href="https://mybinder.org/v2/gh/fcichos/photonics2/master?urlpath=lab/tree/source/notebooks/L4/Lecture4.ipynb"><img alt="Binder badge" src="https://img.shields.io/badge/launch-full%20binder-red.svg" style="vertical-align:text-bottom"></a></span></p>
 </div>
-<div class="section" id="Introduction-to-Photonics-II">
-<h1>Introduction to Photonics II<a class="headerlink" href="#Introduction-to-Photonics-II" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="Lecture-4">
-<h2>Lecture 4<a class="headerlink" href="#Lecture-4" title="Permalink to this headline">¶</a></h2>
+<h1>Lecture 4<a class="headerlink" href="#Lecture-4" title="Permalink to this headline">¶</a></h1>
 <p>Frank Cichos, SS2019</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -457,27 +501,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-2-3e50f40c4c8f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">import</span> numpy <span class="ansi-green-fg">as</span> np
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-green-fg">import</span> matplotlib<span class="ansi-blue-fg">.</span>pyplot <span class="ansi-green-fg">as</span> plt
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> miepython <span class="ansi-green-fg">as</span> mp
-<span class="ansi-green-intense-fg ansi-bold">      4</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> get_ipython<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>run_line_magic<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;matplotlib&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;inline&#39;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;miepython&#39;
-</pre></div></div>
-</div>
-</div>
-</div>
 <div class="section" id="Light-Scattering">
-<h1>Light Scattering<a class="headerlink" href="#Light-Scattering" title="Permalink to this headline">¶</a></h1>
+<h2>Light Scattering<a class="headerlink" href="#Light-Scattering" title="Permalink to this headline">¶</a></h2>
 <p>The scattering of light may be thought of as the redirection of light that takes place when an electromagnetic (EM) wave encounters a scattering particle. As the EM wave interacts with the particle, the electrons in the particle’s constituent molecules are perturbed periodically with the frequency <span class="math notranslate nohighlight">\(\omega\)</span> of the electric field of the incident wave. The oscillation or perturbation of the electron cloud results in a periodic separation of charge within the molecule, which is called an
 induced dipole moment <span class="math notranslate nohighlight">\(\vec{p}(t)\)</span>. We have looked at these details from a semi-classical side with the help of the two level system in the lecture before.</p>
 <p>The majority of light scattered by the particle is emitted at the identical frequency <span class="math notranslate nohighlight">\(\omega\)</span> of the incident light, a process referred to as <strong>elastic scattering</strong>. In summary, the above comments describe the process of light scattering as a complex interaction between the incident EM wave and the molecular/atomic structure of the scattering object; hence light scattering is not simply a matter of incident photons or EM waves <em>bouncing</em> off the surface of an encountered object.</p>
@@ -512,7 +537,7 @@ a=\frac{4\pi \kappa}{\lambda}
 <p><strong>Rayleigh scattering</strong> now refers to the situation, when all particles are just point dipoles, so there is no interference from the scattering volumes of a particle itself. In the case of Mie scattering, the simplifications of the <strong>Rayleigh Debye Gans</strong> theory are dropped and exact calculation are carried out including the phase shifts in spherical particles as well as well as the proper boundary conditions between dielectrics. While <strong>Mie scattering</strong> is valid for all different sizes and
 generalized versions for inhomogeneous dielectric materials exist, the physical understanding is a bit lost due to the mathematical expansions carried out.</p>
 <div class="section" id="General-Electromagnetic-Scattering-Appraoch">
-<h2>General Electromagnetic Scattering Appraoch<a class="headerlink" href="#General-Electromagnetic-Scattering-Appraoch" title="Permalink to this headline">¶</a></h2>
+<h3>General Electromagnetic Scattering Appraoch<a class="headerlink" href="#General-Electromagnetic-Scattering-Appraoch" title="Permalink to this headline">¶</a></h3>
 <p><img alt="Figure1" src="../../_images/Figure1.png" /></p>
 <p>The Figure above shows the spherical coordinate scattering geometry used for Mie and Rayleigh light scattering corresponding to an incident plane wave with a wavevector <span class="math notranslate nohighlight">\(\vec{k}\)</span> on a single spherical particle. Using this coordinate system, the scattering parameters may be defined for the Rayleigh and Mie solutions.</p>
 <p>For each scattering angle <span class="math notranslate nohighlight">\((\phi,\theta)\)</span>, the Equations</p>
@@ -561,6 +586,7 @@ I_{VV}=I_{0}\frac{1}{r^2}\frac{d\sigma_{VV}}{d\Omega}
 <p><span class="math">\begin{equation}
 I_{HH}=I_{0}\frac{1}{r^2}\frac{d\sigma_{HH}}{d\Omega}
 \end{equation}</span></p>
+</div>
 </div>
 <div class="section" id="Rayleigh-Theory">
 <h2>Rayleigh Theory<a class="headerlink" href="#Rayleigh-Theory" title="Permalink to this headline">¶</a></h2>
@@ -645,15 +671,14 @@ X_{n}(z)=-\sqrt{\frac{\pi z}{2}}Y_{n+1/2}(z)
 \sigma_{scat}=\frac{\lambda^{2}}{2\pi}\sum_{n=0}^{\infty}(2n+1)(|a_{n}|^2+|b_{n}|^2)
 \end{equation}</span></p>
 <p>noting that the absorption cross section is readily calculated from the above two.</p>
-</div>
 <hr class="docutils" />
 <div class="section" id="Mie-Scattering-Example-Calculations">
-<h2>Mie Scattering Example Calculations<a class="headerlink" href="#Mie-Scattering-Example-Calculations" title="Permalink to this headline">¶</a></h2>
+<h3>Mie Scattering Example Calculations<a class="headerlink" href="#Mie-Scattering-Example-Calculations" title="Permalink to this headline">¶</a></h3>
 <p>There are a number of different packages around providing th erequired functions for Mie and thus also Rayleight scattering calculations. In the examples below I have used the Python package <strong>miepython</strong>, which is freely available for Python and allows a number of different calculations.</p>
 <p>The following example calculates the extinction efficiency <span class="math notranslate nohighlight">\(Q_{ext}=\sigma_{ext}/\pi R^2\)</span> as a function of the size parameter <span class="math notranslate nohighlight">\(\alpha=2\pi R/\lambda\)</span>. For small Rayleigh particles (refractive index <span class="math notranslate nohighlight">\(m=1.5\)</span>), the extinction cross section is much smaller than the geometric cross section. Later the extinction efficiency is displaying a oscillatory behavior, which is due to the interference of the scattering coming from different subvolumes of the particle. At very large particle
 sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating that the extinction cross section is twice as large as the geometric cross section. This surprising effect is known as the <strong>extinction paradox</strong> and is suggested to be due to the fact that an ideal extinction measurement is carried out at infinite distance from the object and thus also sensitive to diffraction of light around the particle.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -679,28 +704,28 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
 </pre></div>
 </div>
 </div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/fci/opt/anaconda3/lib/python3.7/site-packages/miepython/miepython.py:249: RuntimeWarning: invalid value encountered in double_scalars
+  qback = 4*abs(sback)**2/x2
+</pre></div></div>
+</div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-1-3edc0045b61d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> num <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">2000</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>x <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>linspace<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">20</span><span class="ansi-blue-fg">,</span>num<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> qqext1 <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span>num<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> qqext2 <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span>num<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;np&#39; is not defined
-</pre></div></div>
+<a class="reference internal image-reference" href="../../_images/notebooks_L4_Lecture4_15_1.png"><img alt="../../_images/notebooks_L4_Lecture4_15_1.png" src="../../_images/notebooks_L4_Lecture4_15_1.png" style="width: 734px; height: 440px;" /></a>
+</div>
 </div>
 <p>The next example plots are showing the scaterring intensities of a particle of 5 times the wavelength radius and a refractive index of <span class="math notranslate nohighlight">\(m=1.5\)</span> as a function of the scattering angle <span class="math notranslate nohighlight">\(\theta\)</span>. The plots contain the logarithm of the differential scattering cross section for the two polarization directions as otherwise the backscattering would be only hardly visible. <strong>Large particles as compared to the wavelength are strongly scattering into the forward direction.</strong></p>
+</div>
 <div class="section" id="Small-Particle-Scattering">
 <h3>Small Particle Scattering<a class="headerlink" href="#Small-Particle-Scattering" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -744,7 +769,7 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
 <div class="section" id="Large-Particle-Scattering">
 <h3>Large Particle Scattering<a class="headerlink" href="#Large-Particle-Scattering" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -785,83 +810,6 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
 </div>
 </div>
 <p>The last example demonstrates the scattering cross section as a function of the wavlength for gold nanoparticles.</p>
-</div>
-<div class="section" id="Gold-Particle-Scattering">
-<h3>Gold Particle Scattering<a class="headerlink" href="#Gold-Particle-Scattering" title="Permalink to this headline">¶</a></h3>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># from https://refractiveindex.info/?shelf=main&amp;book=Au&amp;page=Johnson</span>
-<span class="c1"># wavelength in microns</span>
-<span class="n">ref_lam</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1879</span><span class="p">,</span><span class="mf">0.1916</span><span class="p">,</span><span class="mf">0.1953</span><span class="p">,</span><span class="mf">0.1993</span><span class="p">,</span><span class="mf">0.2033</span><span class="p">,</span><span class="mf">0.2073</span><span class="p">,</span><span class="mf">0.2119</span><span class="p">,</span><span class="mf">0.2164</span><span class="p">,</span><span class="mf">0.2214</span><span class="p">,</span><span class="mf">0.2262</span><span class="p">,</span><span class="mf">0.2313</span><span class="p">,</span><span class="mf">0.2371</span><span class="p">,</span><span class="mf">0.2426</span><span class="p">,</span><span class="mf">0.2490</span><span class="p">,</span><span class="mf">0.2551</span><span class="p">,</span><span class="mf">0.2616</span><span class="p">,</span><span class="mf">0.2689</span><span class="p">,</span><span class="mf">0.2761</span><span class="p">,</span><span class="mf">0.2844</span><span class="p">,</span><span class="mf">0.2924</span><span class="p">,</span><span class="mf">0.3009</span><span class="p">,</span><span class="mf">0.3107</span><span class="p">,</span><span class="mf">0.3204</span><span class="p">,</span><span class="mf">0.3315</span><span class="p">,</span><span class="mf">0.3425</span><span class="p">,</span><span class="mf">0.3542</span><span class="p">,</span><span class="mf">0.3679</span><span class="p">,</span><span class="mf">0.3815</span><span class="p">,</span><span class="mf">0.3974</span><span class="p">,</span><span class="mf">0.4133</span><span class="p">,</span><span class="mf">0.4305</span><span class="p">,</span><span class="mf">0.4509</span><span class="p">,</span><span class="mf">0.4714</span><span class="p">,</span><span class="mf">0.4959</span><span class="p">,</span><span class="mf">0.5209</span><span class="p">,</span><span class="mf">0.5486</span><span class="p">,</span><span class="mf">0.5821</span><span class="p">,</span><span class="mf">0.6168</span><span class="p">,</span><span class="mf">0.6595</span><span class="p">,</span><span class="mf">0.7045</span><span class="p">,</span><span class="mf">0.7560</span><span class="p">,</span><span class="mf">0.8211</span><span class="p">,</span><span class="mf">0.8920</span><span class="p">,</span><span class="mf">0.9840</span><span class="p">,</span><span class="mf">1.0880</span><span class="p">,</span><span class="mf">1.2160</span><span class="p">,</span><span class="mf">1.3930</span><span class="p">,</span><span class="mf">1.6100</span><span class="p">,</span><span class="mf">1.9370</span><span class="p">])</span>
-<span class="n">ref_n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.28</span><span class="p">,</span><span class="mf">1.32</span><span class="p">,</span><span class="mf">1.34</span><span class="p">,</span><span class="mf">1.33</span><span class="p">,</span><span class="mf">1.33</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.31</span><span class="p">,</span><span class="mf">1.30</span><span class="p">,</span><span class="mf">1.32</span><span class="p">,</span><span class="mf">1.32</span><span class="p">,</span><span class="mf">1.33</span><span class="p">,</span><span class="mf">1.33</span><span class="p">,</span><span class="mf">1.35</span><span class="p">,</span><span class="mf">1.38</span><span class="p">,</span><span class="mf">1.43</span><span class="p">,</span><span class="mf">1.47</span><span class="p">,</span><span class="mf">1.49</span><span class="p">,</span><span class="mf">1.53</span><span class="p">,</span><span class="mf">1.53</span><span class="p">,</span><span class="mf">1.54</span><span class="p">,</span><span class="mf">1.48</span><span class="p">,</span><span class="mf">1.48</span><span class="p">,</span><span class="mf">1.50</span><span class="p">,</span><span class="mf">1.48</span><span class="p">,</span><span class="mf">1.46</span><span class="p">,</span><span class="mf">1.47</span><span class="p">,</span><span class="mf">1.46</span><span class="p">,</span><span class="mf">1.45</span><span class="p">,</span><span class="mf">1.38</span><span class="p">,</span><span class="mf">1.31</span><span class="p">,</span><span class="mf">1.04</span><span class="p">,</span><span class="mf">0.62</span><span class="p">,</span><span class="mf">0.43</span><span class="p">,</span><span class="mf">0.29</span><span class="p">,</span><span class="mf">0.21</span><span class="p">,</span><span class="mf">0.14</span><span class="p">,</span><span class="mf">0.13</span><span class="p">,</span><span class="mf">0.14</span><span class="p">,</span><span class="mf">0.16</span><span class="p">,</span><span class="mf">0.17</span><span class="p">,</span><span class="mf">0.22</span><span class="p">,</span><span class="mf">0.27</span><span class="p">,</span><span class="mf">0.35</span><span class="p">,</span><span class="mf">0.43</span><span class="p">,</span><span class="mf">0.56</span><span class="p">,</span><span class="mf">0.92</span><span class="p">])</span>
-<span class="n">ref_k</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.188</span><span class="p">,</span><span class="mf">1.203</span><span class="p">,</span><span class="mf">1.226</span><span class="p">,</span><span class="mf">1.251</span><span class="p">,</span><span class="mf">1.277</span><span class="p">,</span><span class="mf">1.304</span><span class="p">,</span><span class="mf">1.350</span><span class="p">,</span><span class="mf">1.387</span><span class="p">,</span><span class="mf">1.427</span><span class="p">,</span><span class="mf">1.460</span><span class="p">,</span><span class="mf">1.497</span><span class="p">,</span><span class="mf">1.536</span><span class="p">,</span><span class="mf">1.577</span><span class="p">,</span><span class="mf">1.631</span><span class="p">,</span><span class="mf">1.688</span><span class="p">,</span><span class="mf">1.749</span><span class="p">,</span><span class="mf">1.803</span><span class="p">,</span><span class="mf">1.847</span><span class="p">,</span><span class="mf">1.869</span><span class="p">,</span><span class="mf">1.878</span><span class="p">,</span><span class="mf">1.889</span><span class="p">,</span><span class="mf">1.893</span><span class="p">,</span><span class="mf">1.898</span><span class="p">,</span><span class="mf">1.883</span><span class="p">,</span><span class="mf">1.871</span><span class="p">,</span><span class="mf">1.866</span><span class="p">,</span><span class="mf">1.895</span><span class="p">,</span><span class="mf">1.933</span><span class="p">,</span><span class="mf">1.952</span><span class="p">,</span><span class="mf">1.958</span><span class="p">,</span><span class="mf">1.948</span><span class="p">,</span><span class="mf">1.914</span><span class="p">,</span><span class="mf">1.849</span><span class="p">,</span><span class="mf">1.833</span><span class="p">,</span><span class="mf">2.081</span><span class="p">,</span><span class="mf">2.455</span><span class="p">,</span><span class="mf">2.863</span><span class="p">,</span><span class="mf">3.272</span><span class="p">,</span><span class="mf">3.697</span><span class="p">,</span><span class="mf">4.103</span><span class="p">,</span><span class="mf">4.542</span><span class="p">,</span><span class="mf">5.083</span><span class="p">,</span><span class="mf">5.663</span><span class="p">,</span><span class="mf">6.350</span><span class="p">,</span><span class="mf">7.150</span><span class="p">,</span><span class="mf">8.145</span><span class="p">,</span><span class="mf">9.519</span><span class="p">,</span><span class="mf">11.21</span><span class="p">,</span><span class="mf">13.78</span><span class="p">])</span>
-
-
-<span class="c1">#interpolate refractive index data</span>
-<span class="n">inter_lam</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.300</span><span class="p">,</span><span class="mf">1.00</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
-<span class="n">inter_n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">inter_lam</span><span class="p">,</span> <span class="n">ref_lam</span><span class="p">,</span> <span class="n">ref_n</span><span class="p">)</span>
-<span class="n">inter_k</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">inter_lam</span><span class="p">,</span> <span class="n">ref_lam</span><span class="p">,</span> <span class="n">ref_k</span><span class="p">)</span>
-
-<span class="n">radius</span> <span class="o">=</span> <span class="mf">0.04</span>                <span class="c1"># in microns</span>
-<span class="n">num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">inter_lam</span><span class="p">)</span>
-<span class="n">n_env</span><span class="o">=</span><span class="mf">1.5</span> <span class="c1">#water around</span>
-<span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">inter_n</span><span class="o">-</span><span class="mf">1.0</span><span class="n">j</span><span class="o">*</span><span class="n">inter_k</span><span class="p">)</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="o">/</span><span class="p">(</span><span class="n">inter_lam</span><span class="o">/</span><span class="n">n_env</span><span class="p">)</span>
-
-<span class="n">qqabs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-<span class="n">qqsca</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="p">:</span>
-    <span class="n">qext</span><span class="p">,</span> <span class="n">qsca</span><span class="p">,</span> <span class="n">qback</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">miepython</span><span class="o">.</span><span class="n">mie</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">n_env</span><span class="p">,</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    <span class="n">qabs</span> <span class="o">=</span> <span class="n">qext</span> <span class="o">-</span> <span class="n">qsca</span>
-    <span class="n">qqabs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">qabs</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
-    <span class="n">qqsca</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">qsca</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">inter_lam</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="n">qqabs</span><span class="o">*</span><span class="mf">1e6</span><span class="p">,</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$\sigma_</span><span class="si">{abs}</span><span class="s1">$&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">inter_lam</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="n">qqsca</span><span class="o">*</span><span class="mf">1e6</span><span class="p">,</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$\sigma_</span><span class="si">{scat}</span><span class="s1">$&#39;</span><span class="p">)</span>
-<span class="c1">#plt.plot(inter_lam*1000, qqsca*1e6, color=&#39;red&#39;,label=&#39;scattering&#39;)</span>
-
-<span class="c1">#plt.title(r&quot;Gold Spheres {} nm diameter&quot;.format(2*radius*1000))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Wavelength (nm)&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Cross Section (nm$^2$)&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="mi">800</span><span class="p">)</span>
-<span class="c1">#plt.ylim(0,15000)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-10-5f99d8d3201e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">     21</span>
-<span class="ansi-green-intense-fg ansi-bold">     22</span> <span class="ansi-green-fg">for</span> i <span class="ansi-green-fg">in</span> range<span class="ansi-blue-fg">(</span>num<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 23</span><span class="ansi-red-fg">     </span>qext<span class="ansi-blue-fg">,</span> qsca<span class="ansi-blue-fg">,</span> qback<span class="ansi-blue-fg">,</span> g <span class="ansi-blue-fg">=</span> miepython<span class="ansi-blue-fg">.</span>mie<span class="ansi-blue-fg">(</span>m<span class="ansi-blue-fg">[</span>i<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">/</span>n_env<span class="ansi-blue-fg">,</span>x<span class="ansi-blue-fg">[</span>i<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     24</span>     qabs <span class="ansi-blue-fg">=</span> qext <span class="ansi-blue-fg">-</span> qsca
-<span class="ansi-green-intense-fg ansi-bold">     25</span>     qqabs<span class="ansi-blue-fg">[</span>i<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">=</span>qabs<span class="ansi-blue-fg">*</span>np<span class="ansi-blue-fg">.</span>pi<span class="ansi-blue-fg">*</span>radius<span class="ansi-blue-fg">**</span><span class="ansi-cyan-fg">2</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;miepython&#39; is not defined
-</pre></div></div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
 <script type="application/vnd.jupyter.widget-state+json">
 {"state": {}, "version_major": 2, "version_minor": 0}
 </script></div>
@@ -873,6 +821,15 @@ sizes, the extinction efficiency reaches a value of <strong>2</strong>, stating 
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../L6/Lecture6.html" class="btn btn-neutral float-right" title="Lecture 6" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../L3/Lecture3.html" class="btn btn-neutral float-left" title="Lecture 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
