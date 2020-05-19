@@ -483,64 +483,27 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="section" id="Surface-Plasmons">
 <h1>Surface Plasmons<a class="headerlink" href="#Surface-Plasmons" title="Permalink to this headline">¶</a></h1>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">miepython</span> <span class="k">as</span> <span class="nn">mp</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;teaching&#39;</span><span class="p">)</span>
 
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = &#39;retina&#39;
 
-
-<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
-                     <span class="s1">&#39;axes.titlesize&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
-                     <span class="s1">&#39;axes.labelsize&#39;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
-                     <span class="s1">&#39;axes.labelpad&#39;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
-                     <span class="s1">&#39;lines.linewidth&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                     <span class="s1">&#39;lines.markersize&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-                     <span class="s1">&#39;xtick.labelsize&#39;</span> <span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
-                     <span class="s1">&#39;ytick.labelsize&#39;</span> <span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
-                     <span class="s1">&#39;xtick.top&#39;</span> <span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-                     <span class="s1">&#39;xtick.direction&#39;</span> <span class="p">:</span> <span class="s1">&#39;in&#39;</span><span class="p">,</span>
-                     <span class="s1">&#39;ytick.right&#39;</span> <span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-                     <span class="s1">&#39;ytick.direction&#39;</span> <span class="p">:</span> <span class="s1">&#39;in&#39;</span><span class="p">,})</span>
-
-<span class="c1"># center the plots</span>
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;style&gt;</span>
-<span class="s2">.output_png {</span>
-<span class="s2">    display: table-cell;</span>
-<span class="s2">    text-align: center;</span>
-<span class="s2">    vertical-align: middle;</span>
-<span class="s2">}</span>
-<span class="s2">&lt;/style&gt;</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
-</pre></div>
-</div>
-<div class="output_area rendered_html docutils container">
-<style>
-.output_png {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-</style></div>
 </div>
 <p>During the last lecture we have developed an understanding of the optical response of noble metals based on the Drude model (free electrons) and the interband transitions which we have described in terms of damped driven harmonic oscillators. The theoretical calculations are repeated here to base our future calculations for the plasmon resonance in thin films and particles on it.</p>
 <div class="section" id="Drude-Sommerfeld-theory-(repetition)">
 <h2>Drude-Sommerfeld theory (repetition)<a class="headerlink" href="#Drude-Sommerfeld-theory-(repetition)" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -661,7 +624,7 @@ div.rendered_html tbody tr:hover {
 <h2>Plasmons at planar interfaces<a class="headerlink" href="#Plasmons-at-planar-interfaces" title="Permalink to this headline">¶</a></h2>
 <p>By definition surface plasmons are the quanta of surface-charge-density oscillations, but the same terminology is commonly used for collective oscillations in the electron density at the surface of a metal. The surface charge oscillations are naturally coupled to electromagnetic waves, which explains their designation as polaritons. In this section, we consider a plane interface between two media. One medium is characterized by a general, complex frequency-dependent dielectric function
 <span class="math notranslate nohighlight">\(\epsilon_{1}(\omega)\)</span> whereas the dielectric function of the other medium <span class="math notranslate nohighlight">\(\epsilon_{2}(\omega)\)</span> is assumed to be real. We choose the interface to coincide with the plane <span class="math notranslate nohighlight">\(z = 0\)</span> of a Cartesian coordinate system. We are looking for homogeneous solutions of Maxwell’s equations that are localized at the interface. A homogeneous solution is an eigenmode of the system, i.e. a solution that exists without external excitation. Mathematically, it is the solution of the wave equation</p>
-<p><img alt="Figure 1" src="../../_images/geometry1.png" /></p>
+<p><img alt="Geometry" src="../../_images/geometry1.png" /></p>
 <p><span class="math">\begin{equation}
 \nabla\times\nabla\times{\bf E}({\bf r},\omega)-\frac{\omega^2}{c^2}\epsilon({\bf r},\omega){\bf E}({\bf r},\omega)=0
 \end{equation}</span></p>
@@ -925,17 +888,17 @@ surface plasmon at:  193.04699999989856  nm
 <h2>Exciting Surface Plasmons<a class="headerlink" href="#Exciting-Surface-Plasmons" title="Permalink to this headline">¶</a></h2>
 <p>The above image shows the disperion relation for the surface plasmon and the dispersion relation for free space propagation of light as the dash-dot line. What you might notice, is that both curves do not intersect, but as we noted above, the wavevector along of the surface plasmon and the incident light have to match at the boundary. In other words the momentum of the photon in free space is insufficient to excite the surface plasmon.</p>
 <p>The physical reason for the increased momentum of the SPP is the strong coupling between light and surface charges. The light field has to “drag” the electrons along the metal surface. Con- sequently, this means that a SPP on a plane interface cannot be excited by light of any frequency that propagates in free space.</p>
-<p><img alt="Figure 2" src="../../_images/Lycurgus.png" /></p>
+<p><img alt="Configs" src="../../_images/excitation.png" /></p>
 <p>Excitation of a SPP by light is only possible if a wavevector component of the exciting light can be increased over its free-space value. There are several ways to achieve this increase of the wavevector component. The conceptually most simple solution is to excite surface plasmons by means of evanescent waves created at the interface between a medium with refractive index <span class="math notranslate nohighlight">\(n&gt;1\)</span>.</p>
 <p><strong>Otto configuration</strong></p>
 <p>In the Otto configuration the tail of an evanescent wave at a glass/air interface is brought into contact with a metal/air interface that supports SPPs. For a sufficiently large separation between the two interfaces (gapwidth) the evanescent wave is only weakly influenced by the presence of the metal. By tuning the angle of incidence of the totally reflected beam inside the prism, the resonance condition for excitation of SPPs, i.e. the matching of the parallel wavevector com- ponents, can be
 fulfilled. The excitation of a SPP will show up as a minimum in the reflected light. The reflectivity of the system as a function of the angle of incidence and of the gapwidth</p>
-<p><img alt="Figure 3" src="../../_images/chain_o_particles.png" /></p>
+<p><img alt="Rfelectivity_all0" src="../../_images/plasmon_resonance.png" /></p>
 <p>For the angle of incidence a clear resonance is observed at <span class="math notranslate nohighlight">\(43.5^{\circ}\)</span>. For a small gapwidth the resonance is broadened and shifted due to radiation damping of the SPP. This is caused by the presence of the glass half-space, which allows the SPP to rapidly decay radiatively by transforming the evanescent SPP field into a propagating field in the glass. For a gapwidth that is too large the SPP can no longer be efficiently excited and the resonance vanishes.</p>
 <p><strong>Kretschmann configuration</strong></p>
 <p>The Kretschmann configuration is an alternative method to excite SPP. In his method, a thin metal film is deposited on top of a prism. To excite a surface plasmon at the metal/air interface an evanescent wave created at the glass/metal interface has to penetrate through the metal layer. Here, similar arguments apply as for the Otto configuration. If the metal is too thin, the SPP will be strongly damped because of radiation damping into the glass. If the metal film is too thick the SPP can no
 longer be efficiently excited due to absorption in the metal.</p>
-<p><img alt="Figure 4" src="../../_images/dispersion.png" /></p>
+<p><img alt="Reflectivity_all" src="../../_images/plasmon_kretschmann.png" /></p>
 <p>The figure shows the reflectivity of the excitation beam as a function of the metal film thickness and the angle of incidence. As before, the resonant excitation of surface plasmons is characterized by a dip in the reflectivity curves.</p>
 <div class="section" id="Calculation-of-the-angle-dependent-reflectivity">
 <h3>Calculation of the angle dependent reflectivity<a class="headerlink" href="#Calculation-of-the-angle-dependent-reflectivity" title="Permalink to this headline">¶</a></h3>
@@ -1028,7 +991,7 @@ longer be efficiently excited due to absorption in the metal.</p>
 <div class="section" id="Surface-plasmon-sensors">
 <h3>Surface plasmon sensors<a class="headerlink" href="#Surface-plasmon-sensors" title="Permalink to this headline">¶</a></h3>
 <p>The distinct resonance condition associated with the excitation of surface plasmons has found application in various sensors. For example, the position of the dip in the reflectivity curves can be used as an indicator for environmental changes. With this method, the adsorption or removal of target materials on the metal surface can be detected with submonolayer accuracy.</p>
-<p><img alt="Figure 5" src="../../_images/waveguide.png" /></p>
+<p><img alt="Reflectivity" src="../../_images/sensor_application.png" /></p>
 <p>The figure illustrates this capability by a simulation. It shows the effect of a 3 nm layer of water on top of a 53 nm thick silver film on glass. A strongly shifted plasmon resonance curve can be observed. Assuming that the angle of incidence of the excitation beam has been adjusted to the dip in the reflectivity curve, the deposition of a minute amount of material increases the signal (reflectivity) drastically. This means that the full dynamic range of a low-noise intensity measurement can be
 used to measure a coverage ranging between 0 and 3 nm. Consequently, SPP sensors are very attractive for applications ranging from biological binding assays to environmental sensing.</p>
 <div class="section" id="Angle-dependent-reflectivity-for-a-silver-layer-on-glass-with-water-and-air-on-top">
@@ -1342,7 +1305,7 @@ the dielectric function mismatch.</p>
 <p>As expected, the scattering cross-section scales with the square of the volume and the absorption cross-section only with the volume. Consequently, for large particles extinction is dominated by scattering whereas for small particles it is associated with absorption. This effect can be used to detect extremely small metal particles down to 2.5 nm diameter which are used as labels in biological samples. The transition between the two size regimes is characterized by a distinct color change. For
 example, small gold particles absorb green and blue light and thus render a red color. On the other hand, larger gold particles scatter predominantly in the green and hence render a greenish color. A very nice illustration of these findings is colored glasses. The famous Lycurgus cup (see below) was made by ancient Roman artists and is today exhibited at the British Museum, London. When illuminated by a white source from behind, the cup shows an amazingly rich shading of colors ranging from deep
 green to bright red. For a long time it was not clear what causes these colors. Today it is known that they are due to nanometer-sized gold particles embedded in the glass. The colors are determined by an interplay of absorption and scattering.</p>
-<p><img alt="Figure 2" src="../../_images/Lycurgus.png" /></p>
+<p><img alt="Cup" src="../../_images/Lycurgus.png" /></p>
 </div>
 <div class="section" id="Ellispoids">
 <h3>Ellispoids<a class="headerlink" href="#Ellispoids" title="Permalink to this headline">¶</a></h3>
@@ -1409,7 +1372,7 @@ ated with the much smaller dimensions of the particle and hence the larger surfa
 <div class="section" id="Chains-of-metal-nanoparticles,-waveguides">
 <h3>Chains of metal nanoparticles, waveguides<a class="headerlink" href="#Chains-of-metal-nanoparticles,-waveguides" title="Permalink to this headline">¶</a></h3>
 <p>An interesting and insightful application is the coupling of gold nanoparticles to chains of nanoparticles as described by <a class="reference external" href="http://journals.aps.org/prb/abstract/10.1103/PhysRevB.62.R16356">Brongersma</a> . Due to the near field of these particles, neighboring particles couple and give rise to a plasmon wave with a new dispersion relation. We will shortly have a look at such a chain of particles. Suppose we have such a chain</p>
-<p><img alt="Figure 3" src="../../_images/chain_o_particles.png" /></p>
+<p><img alt="Chain" src="../../_images/chain_o_particles.png" /></p>
 <p>where <span class="math notranslate nohighlight">\(i\)</span> denotes the polarization and <span class="math notranslate nohighlight">\(m\)</span> denotes the position of the particle in the chain. The dipole moment of that particle is given by <span class="math notranslate nohighlight">\(p_{i,m}(t)\)</span> and depends on time. The particles in this chain are coupled by the electric fields and we assume a Förster coupling i.e. <span class="math notranslate nohighlight">\(E_{F}\propto R^{-3}\)</span>.</p>
 <p>If the particles are seperated by a distance <span class="math notranslate nohighlight">\(d\)</span> then a particle {<span class="math notranslate nohighlight">\(i,m\)</span>} produces at its neigbors an electric field</p>
 <p><span class="math">\begin{equation}
@@ -1440,9 +1403,9 @@ p_{i,m}=P_{i,0}e^{-\alpha m d+i(\omega t \pm k m d)}
 v_{g,i}=\frac{d\omega}{d k}=\gamma_{i}\omega_{1}^2\sin(k d)/\omega
 \end{equation}</span></p>
 <p>From that, it can be easily seen, that the waves in the logitudinal branch (L) propagate faster than in the transverse (T). The dispersion relation for the small damping case is shown in the following Figure</p>
-<p><img alt="Figure 4" src="../../_images/dispersion.png" /></p>
+<p><img alt="Chain_Modes" src="../../_images/dispersion.png" /></p>
 <p>With the help of such particle chains, waveguides and beam splitters may be easily created. Due to the directionality of the dipole, also such beam splitters are polarizing beam splitters.</p>
-<p><img alt="Figure 5" src="../../_images/waveguide.png" /></p>
+<p><img alt="Waveguides" src="../../_images/waveguide.png" /></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
